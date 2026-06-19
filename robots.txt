@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bmthal.github.io/web-lovegames-com/sitemap.xml

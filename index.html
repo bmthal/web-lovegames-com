@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏 · 游戏专题介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f7f8fa;
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #1e1f24;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 640px;
+            width: 100%;
+            padding: 3rem 1.5rem 4rem;
+        }
+
+        /* hero 横幅 */
+        .hero {
+            margin-bottom: 2.8rem;
+        }
+
+        .hero__label {
+            font-size: 0.75rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #84868c;
+            margin-bottom: 0.6rem;
+            font-weight: 500;
+        }
+
+        .hero__title {
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            color: #0e0f14;
+            margin-bottom: 0.4rem;
+        }
+
+        .hero__sub {
+            font-size: 1rem;
+            color: #4f5158;
+            border-left: 2px solid #d0d2d8;
+            padding-left: 1rem;
+            margin-top: 0.25rem;
+        }
+
+        /* 段落板块 */
+        .section {
+            margin-bottom: 2.6rem;
+        }
+
+        .section__heading {
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            color: #181a1f;
+            margin-bottom: 0.6rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px solid #ecedf0;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            font-size: 0.96rem;
+            color: #2c2e34;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section a {
+            color: #1c5f8e;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s;
+        }
+
+        .section a:hover {
+            border-bottom-color: #1c5f8e;
+        }
+
+        .highlight {
+            background: #f0f1f4;
+            padding: 0.1rem 0.25rem;
+            border-radius: 2px;
+            font-weight: 450;
+        }
+
+        /* 特点短句 */
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem 1.2rem;
+            margin: 1.2rem 0 0.4rem;
+        }
+
+        .feature-grid span {
+            font-size: 0.9rem;
+            background: #ecedf0;
+            padding: 0.2rem 0.7rem;
+            border-radius: 12px;
+            color: #1e1f24;
+        }
+
+        /* 引用式说明 */
+        .note-box {
+            background: #f0f2f5;
+            padding: 1rem 1.2rem;
+            border-radius: 6px;
+            margin: 1.2rem 0;
+            font-size: 0.9rem;
+            color: #2b2d33;
+            border-left: 3px solid #b3b6bf;
+        }
+
+        .note-box strong {
+            color: #0e0f14;
+        }
+
+        /* 页尾 */
+        .footer-note {
+            margin-top: 3.2rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #dcdde0;
+            font-size: 0.88rem;
+            color: #636670;
+            line-height: 1.7;
+        }
+
+        .footer-note a {
+            color: #1c5f8e;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s;
+        }
+
+        .footer-note a:hover {
+            border-bottom-color: #1c5f8e;
+        }
+
+        .faq-mini {
+            margin-top: 1.4rem;
+            padding: 0.8rem 1rem;
+            background: #ffffff;
+            border: 1px solid #e2e3e8;
+            border-radius: 6px;
+        }
+
+        .faq-mini dt {
+            font-weight: 600;
+            font-size: 0.92rem;
+            color: #181a1f;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-mini dd {
+            font-size: 0.88rem;
+            color: #4b4e57;
+            margin-bottom: 0.7rem;
+        }
+
+        .faq-mini dd:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 小屏微调 */
+        @media (max-width: 480px) {
+            .container {
+                padding: 2rem 1rem 3rem;
+            }
+
+            .hero__title {
+                font-size: 1.9rem;
+            }
+
+            .hero__sub {
+                font-size: 0.9rem;
+                padding-left: 0.7rem;
+            }
+
+            .section__heading {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- hero 横幅 -->
+        <header class="hero">
+            <div class="hero__label">专题 · 游戏站点</div>
+            <h1 class="hero__title">爱游戏</h1>
+            <div class="hero__sub">面向玩家的信息聚合与内容索引</div>
+        </header>
+
+        <!-- 背景说明 -->
+        <section class="section">
+            <h2 class="section__heading">站点背景</h2>
+            <p>
+                「<a href="https://web-lovegames.com">爱游戏</a>」最初设立于 2020 年，定位为轻量级游戏信息聚合站。站点围绕不同品类——角色扮演、策略模拟、独立叙事——提供精选导读与发行资讯。内容来源以公开资料编译与社区授权转载为主，同时标注原始出处，以便爱好者进一步查证。
+            </p>
+            <p>
+                与一般商业游戏门户不同，该站不设排行、抽奖或返利链接，页面内无追踪脚本。所有文章均保留编辑署名及修订记录，部分专题附有参考书目或开发组访谈链接，方便读者交叉核对。站内搜索基于静态索引，不收集用户查询词。
+            </p>
+        </section>
+
+        <!-- 可信说明与特点 -->
+        <section class="section">
+            <h2 class="section__heading">内容可信与边界</h2>
+            <p>
+                每篇介绍均注明信息获取时间与版本号，对于早期访问或已下架内容会以脚注形式说明。站方定期更新失效链接，并公开维护日志。编辑团队由兼职玩家与媒体从业者组成，不接受付费软文或定向修改，稿内观点仅代表撰稿人。
+            </p>
+
+            <div class="feature-grid">
+                <span>来源可溯</span>
+                <span>无跟踪脚本</span>
+                <span>定期勘误</span>
+                <span>编辑独立</span>
+                <span>开放反馈</span>
+            </div>
+
+            <div class="note-box">
+                <strong>关于收录标准：</strong> 优先纳入正式发售的完整作品，Early Access 及 Demo 版本会在标题与正文中明确标注状态。不收录明显侵权、恶意软件或未授权移植内容。
+            </div>
+
+            <p>
+                站内设有「存档区」，保存已停止运营或大版本更迭前的历史页面快照，辅助研究与回顾。站点服务器位于欧洲，采用静态托管，未部署任何用户注册或评论系统，互动通过公开邮件列表进行。
+            </p>
+        </section>
+
+        <!-- 第三段：应用场景与栏目举例 -->
+        <section class="section">
+            <h2 class="section__heading">栏目与使用场景</h2>
+            <p>
+                站内主要分为「新作速览」「专题回顾」「开发侧记」三个栏目。新作速览侧重即将发售作品的公开信息汇编，每个条目包含发售日、平台、开发团队与Steam／官方页面链接；专题回顾以系列作品或某一类型为线索，例如 2022 年发布的「点击解谜复兴」与 2024 年的「极简模拟器小史」。
+            </p>
+            <p>
+                「开发侧记」收录独立开发者自述与公开演讲译文，经授权后整理为长文。读者可通过页面底部邮箱地址提交转载申请或勘误。此外，站内每月发布一份不记名的阅读统计（仅展示页面浏览量排名，不含个人数据），帮助读者了解社区关注趋势。
+            </p>
+            <p>
+                对于希望系统了解某一品类的玩家，栏目页也提供按年份和标签筛选的索引视图，方便横向对比。所有外链均采用 <code>rel="nofollow noopener"</code> 属性，不参与商业计费或推荐算法。
+            </p>
+        </section>
+
+        <!-- 页尾访问提示 + FAQ 摘要 -->
+        <footer class="footer-note">
+            <p>
+                本站持续更新，内容维护者会在每季度初发布站点变更摘要。如需访问全部专题与索引，可前往主站 <a href="https://web-lovegames.com">爱游戏</a>。页面无广告，加载字体使用系统默认栈，以保证低带宽下的可读性。
+            </p>
+
+            <dl class="faq-mini">
+                <dt>如何确认信息时效？</dt>
+                <dd>每篇文章顶部标注最后核实日期，过时内容会置顶提醒。部分页面附有版本历史链接（如 GitHub 提交记录）。</dd>
+
+                <dt>是否可以转载内容？</dt>
+                <dd>站内原创文本以 CC BY-NC 4.0 协议发布，转载需署名并注明来源。编译类文章需同时获得原作者授权。</dd>
+
+                <dt>站点是否会收集个人数据？</dt>
+                <dd>不收集。静态页面无 Cookie、无分析脚本，仅托管服务商可能保留短期访问日志（不包含个人标识）。</dd>
+            </dl>
+        </footer>
+    </div>
+</body>
+</html>
